@@ -1,0 +1,118 @@
+/* General Styling */
+body {
+    background: linear-gradient(135deg, #1c1c1e, #2a2a2e);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* Container with Glassmorphism Effect */
+.container {
+    margin-top: 50px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    max-width: 700px;
+}
+
+/* Form Styling */
+/* Ensure text is visible inside input fields */
+.form-control {
+    color: #ffffff !important; /* Force white text */
+    background: rgba(255, 255, 255, 0.15) !important; /* Slightly lighter background */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Placeholder text styling */
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6) !important; /* Light gray placeholder */
+}
+
+/* Ensure text remains visible while typing */
+.form-control:focus, .form-control:active {
+    color: #ffffff !important; /* Force white text on focus */
+    background: rgba(255, 255, 255, 0.25) !important;
+    border-color: #007bff;
+}
+
+/* Fix text visibility inside input fields for WebKit browsers */
+input:-webkit-autofill {
+    -webkit-text-fill-color: #ffffff !important; /* Force white text */
+    background: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Fix button text visibility */
+.btn {
+    color: #ffffff !important; /* Ensure buttons have visible text */
+}
+
+
+/* Select Dropdown Styling */
+select.form-control {
+    cursor: pointer;
+}
+
+select.form-control:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Button Styling */
+.btn-primary, .btn-danger {
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    width: 100%;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #007bff, #6610f2);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.btn-primary:hover, .btn-danger:hover {
+    transform: scale(1.05);
+}
+
+/* Table Styling */
+.table {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #444;
+    color: #ffffff;
+    padding: 12px;
+}
+
+.table td {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Table Row Hover */
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: 0.3s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .btn-primary, .btn-danger {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}

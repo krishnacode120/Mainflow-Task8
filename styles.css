@@ -1,0 +1,75 @@
+/* Global Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+/* Page Title */
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* Logout Button */
+.logout-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Custom Theme Button */
+.btn-theme {
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-theme:hover {
+    background: linear-gradient(135deg, #0056b3, #520dc2);
+    transform: scale(1.05);
+}
+
+/* Button Row Styling */
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-md-4 {
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .btn-theme {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}

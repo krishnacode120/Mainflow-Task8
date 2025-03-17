@@ -1,0 +1,67 @@
+/* General Styling */
+body {
+    background: linear-gradient(135deg, #1c1c1e, #2a2a2e);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* Container with Glassmorphism Effect */
+.container {
+    margin-top: 50px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
+}
+
+/* Table Styling */
+.table {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #444;
+    color: #ffffff;
+    padding: 12px;
+    text-align: center;
+}
+
+.table td {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+/* Table Row Hover */
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: 0.3s;
+}
+
+/* Status Badges */
+.paid {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.pending {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .table th, .table td {
+        font-size: 0.9rem;
+    }
+}
